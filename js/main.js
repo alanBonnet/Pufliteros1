@@ -4,5 +4,5 @@ let canSeeReg= false;
 let canSeeLog=false;
 function registrarDo(){
     canSeeReg = !canSeeLog
-    if()
+    //if()
 }
