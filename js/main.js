@@ -35,7 +35,7 @@ function registrarDo(){
         <label for="passRegister" class="label-form p-2 text-white">Confirmar Contraseña</label>
         <input type="password" name="passRegister" id="passRegister" class="form-control" value="password">
 
-        <button type="submit" class="btn btn-outline-dark form-control mt-2 mb-3">Ingresar</button>
+        <button type="submit" class="btn btn-dark form-control mt-2 mb-3">Ingresar</button>
 
         
 
@@ -91,7 +91,7 @@ function ingresarDo(){
         <input type="checkbox" name="" id="" class="form-checkbox border-dark border-3 border p-2 ">
         <label for="" class="label-form p-2 text-white">Recordar contraseña</label>
 
-        <button type="submit" class="btn btn-outline-dark form-control mt-2 mb-3">Ingresar</button>
+        <button type="submit" class="btn btn-dark form-control mt-2 mb-3">Ingresar</button>
 
 
 
