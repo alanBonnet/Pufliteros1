@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+*{font-family: 'Lusitana', serif;}
+
+h6{
+    color: antiquewhite;
+    text-align: center;
+}
+
+.bg-orange{
+    background-color: rgba(0, 145, 7, 0.726);
+}
