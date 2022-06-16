@@ -35,31 +35,34 @@ function registrarDo(){
         <label for="passRegister" class="label-form p-2 text-white">Confirmar Contraseña</label>
         <input type="password" name="passRegister" id="passRegister" class="form-control" value="password">
 
-        <h6 class="mt-4 mb-2">Ingrese con:</h6>
+        <button type="submit" class="btn btn-outline-dark form-control mt-2 mb-3">Ingresar</button>
 
-        <div class="row">
-        <div class="col-6">
-            <button class="btn btn-outline-danger form-control my-3" type="button">
-            <i class="bi bi-google" id="HappyGoogle" type="button"></i>
-            </button>
-        </div>
-        <div class="col-6">
-            <button class="btn btn-outline-light form-control my-3" type="button">
-            <i class="bi bi-apple" id="HappyApple" type="button"></i>
-            </button>
-        </div>
-        <div class="col-6">
-            <button class="btn btn-outline-primary form-control my-3" type="button">
-            <i class="bi bi-facebook" id="HappyFacebook" type="button"></i>
-            </button>
-        </div>
-        <div class="col-6">
-            <button class="btn btn-outline-info form-control my-3" type="button">
-            <i class="bi bi-twitter" id="HappyTwitter" type="button"></i>
-            </button>
-        </div>
+        
 
-        <button type="submit" class="btn btn-outline-dark form-control my-2">Ingresar</button>
+        <div class="row bg-secondary bg-opacity-50 my-1">
+            <h6 class="mt-4 mb-2 col-12">O puede registrarse con:</h6>
+            <div class="col-6">
+                <button class="btn btn-outline-danger form-control my-3" type="button">
+                <i class="bi bi-google" id="HappyGoogle" type="button"></i>
+                </button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-outline-light form-control my-3" type="button">
+                <i class="bi bi-apple" id="HappyApple" type="button"></i>
+                </button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-outline-primary form-control my-3" type="button">
+                <i class="bi bi-facebook" id="HappyFacebook" type="button"></i>
+                </button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-outline-info form-control my-3" type="button">
+                <i class="bi bi-twitter" id="HappyTwitter" type="button"></i>
+                </button>
+            </div>
+        </div>
+        
      </form>`
     
     }else{
@@ -88,20 +91,21 @@ function ingresarDo(){
         <input type="checkbox" name="" id="" class="form-checkbox border-dark border-3 border p-2 ">
         <label for="" class="label-form p-2 text-white">Recordar contraseña</label>
 
-        <button type="submit" class="btn btn-outline-dark form-control my-2">Ingresar</button>
+        <button type="submit" class="btn btn-outline-dark form-control mt-2 mb-3">Ingresar</button>
 
 
 
-        <h6 class="mt-4 mb-2">También podes ingresar con:</h6>
+        
 
-        <div class="row">
+        <div class="row bg-secondary bg-opacity-50">
+          <h6 class="mt-4 mb-2 col-12">También podes ingresar con:</h6>
           <div class="col-6">
-            <button class="btn btn-outline-danger form-control" type="button">
+            <button class="btn btn-outline-danger form-control my-3" type="button">
               <i class="bi bi-google" id="HappyGoogle" type="button"></i>
             </button>
           </div>
           <div class="col-6">
-            <button class="btn btn-outline-light form-control" type="button">
+            <button class="btn btn-outline-light form-control my-3" type="button">
               <i class="bi bi-apple" id="HappyApple" type="button"></i>
             </button>
           </div>
@@ -115,6 +119,7 @@ function ingresarDo(){
               <i class="bi bi-twitter" id="HappyTwitter" type="button"></i>
             </button>
           </div>
+        </div>
     </form>
     `
     }else{
