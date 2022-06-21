@@ -27,13 +27,13 @@ function registrarDo(){
         <input class="form-control" type="text" name="username" id="usernameRegister">
 
         <label for="email" class="label-form p-2 text-white">Email</label>
-        <input type="email" name="email" id="emailRegister" class="form-control" placesholder="example@email.com">
+        <input type="email" name="email" id="emailRegister" min="12" class="form-control" placesholder="example@email.com" required>
 
         <label for="passRegister" class="label-form p-2 text-white">Contraseña</label>
-        <input type="password" name="passRegister" id="passRegister" class="form-control" value="password">
+        <input type="password" name="passRegister" id="passRegister" min="6" class="form-control" value="tucontra" placesholder="password" required>
 
         <label for="passRegister" class="label-form p-2 text-white">Confirmar Contraseña</label>
-        <input type="password" name="passRegister" id="passRegister" class="form-control" value="password">
+        <input type="password" name="passRegister" id="passRegister" min="6" class="form-control" value="tucontra" placesholder="password" required>
 
         <button type="submit" class="btn btn-dark form-control mt-2 mb-3">Ingresar</button>
 
@@ -84,10 +84,10 @@ function ingresarDo(){
           <i class="bi bi-arrow-left"></i>
         </button>
         <label for="username" class="label-form p-2 text-white">Nombre Usuario/Email</label>
-        <input class="form-control" type="text" name="username" id="username">
+        <input class="form-control" type="text" name="username" id="username" min="6" required>
 
         <label for="passIni" class="label-form p-2 text-white">Contraseña</label>
-        <input type="password" name="passIni" id="passIni" class="form-control" value="password">
+        <input type="password" name="passIni" id="passIni" class="form-control" value="tucontra" placesholder="password" min="6" required>
         <input type="checkbox" name="" id="" class="form-checkbox border-dark border-3 border p-2 ">
         <label for="" class="label-form p-2 text-white">Recordar contraseña</label>
 
