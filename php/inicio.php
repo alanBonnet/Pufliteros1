@@ -44,19 +44,20 @@
       </div>
     </div>
   </nav>';
+  $formularioIngreso='<div class="row rounded" id="ingresar">
+  <div id="botonera" class="bg-orange col-10 col-sm-6 mx-auto py-5 my-2 rounded text-center">
+  <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="ingresarDo()" id="btn-login">Ingresar</button>
+  <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="registrarDo()" id="btn-singin">Registrarse</button>
+  </div>
+</div>';
   $content= '<div class="container">
   <h3 class="rounded my-2 text-center p-2 bg-orange text-light">Tu página ideal para crear un CV y
     compartirlo con tus futuros empleadores</h3>
-  <div class="row rounded" id="ingresar">
-        <div id="botonera" class="bg-orange col-10 col-sm-6 mx-auto py-5 my-2 rounded text-center">
-        <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="ingresarDo()" id="btn-login">Ingresar</button>
-        <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="registrarDo()" id="btn-singin">Registrarse</button>
-        </div>
-    </div>
+  
   </div>';
   /*pinto el navbar y luego el content*/
   echo $navbar;
-  echo $content;
+  echo $formularioIngreso;
 
   ?>
   
