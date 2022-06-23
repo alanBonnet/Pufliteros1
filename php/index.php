@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php include("../core/db.php")/*Acá conecto a la base de datos*/?>
+<?php include("../includes/header.php")/*Acá llamo al <head></head> con un navbar del header.php*/?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pufliteros</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../style.css">
-</head>
-
-<body>
-  <?php 
-    include "./inicio.php";
-   ?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  <script src="../js/main.js"></script>
+<?php 
+  $quieroTareas=true;
+  if($quieroTareas){    
+    include('./tareabody.php');
+  }else{
+    include("./inicio.php")/*acá puede entrar el contenido de la página*/;
+  }
+?>
   
-</body>
-
-</html>
+<?php include("../includes/footer.php")/*acá entra el final del codigo y los scripts(js)*/?>
