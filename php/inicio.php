@@ -23,29 +23,17 @@ include("../core/db.php");
     }
 
     */
-    $needLogin = false
+    $needLogin = true
   /*pinto el navbar y luego el content*/
 
   ?>
-  
 
-  <div class="container">
-  <h3 class="rounded my-2 text-center p-2 bg-orange text-light">Tu página ideal para crear un CV y
-    compartirlo con tus futuros empleadores</h3>
+
     <?php
       if($needLogin){
-        echo '
-        <div class="row rounded" id="ingresar">
-        <div id="botonera" class="bg-orange col-10 col-sm-6 mx-auto py-5 my-2 rounded text-center">
-        <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="ingresarDo()" id="btn-login">Ingresar</button>
-        <button class="btn btn-outline-light mx-lg-4 btn-lg" onclick="registrarDo()" id="btn-singin">Registrarse</button>
-        </div>
-      </div>';
-      }else{
-        /*acá entraría lo que debería aparecer en caso de que el usuario ya esté logeado*/
         ?>
           <!-- Header-->
-            <header class="masthead text-center text-white">
+          <header class="masthead text-center text-white">
                 <div class="masthead-content">
                     <div class="container px-5">
                         <h1 class="masthead-heading mb-0">Qué ofrecemos</h1>
@@ -62,7 +50,7 @@ include("../core/db.php");
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-lg-2">
-                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/01.jpg" alt="..." /></div>
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="../New Model/assets/img/01.jpg" alt="..." /></div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="p-5">
@@ -78,7 +66,7 @@ include("../core/db.php");
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6">
-                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/02.jpg" alt="..." /></div>
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="../New Model/assets/img/02.jpg" alt="..." /></div>
                         </div>
                         <div class="col-lg-6">
                             <div class="p-5">
@@ -94,7 +82,7 @@ include("../core/db.php");
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-lg-6 order-lg-2">
-                            <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
+                            <div class="p-5"><img class="img-fluid rounded-circle" src="../New Model/assets/img/03.jpg" alt="..." /></div>
                         </div>
                         <div class="col-lg-6 order-lg-1">
                             <div class="p-5">
@@ -105,6 +93,12 @@ include("../core/db.php");
                     </div>
                 </div>
             </section>
+        
+        <?php
+      }else{
+        /*acá entraría lo que debería aparecer en caso de que el usuario ya esté logeado*/
+        ?>
+          
         <?php
       }
     ?>
