@@ -27,11 +27,8 @@ include("../core/db.php");
   /*pinto el navbar y luego el content*/
 
   ?>
-  
 
-  <div class="container">
-  <h3 class="rounded my-2 text-center p-2 bg-orange text-light">Tu página ideal para crear un CV y
-    compartirlo con tus futuros empleadores</h3>
+  
     <?php
       if($needLogin){
         echo '
