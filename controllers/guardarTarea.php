@@ -6,7 +6,7 @@
         $description = $_POST['description'];
         
 
-        $query = "INSERT INTO tarea(title, description) VALUES ('$title','$description')";
+        $query = "INSERT INTO tareas(title, description) VALUES ('$title','$description')";
 
         $result = mysqli_query($conexion,$query);
         if(!$result){
