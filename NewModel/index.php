@@ -12,7 +12,9 @@
                         <li class="nav-item"><a class="nav-link" href="#!">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Registrarse</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#RegistrarseModal">Registrarse</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -78,5 +80,8 @@
                 </div>
             </div>
         </section>
-        
+        <!-- Modales -->
+            <?php include('../includes/modals/modalRegister.php')?>
+
+
 <?php include('../includes/footer.php')?>
