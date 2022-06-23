@@ -2,7 +2,7 @@
 <?php include("../includes/header.php")/*Acá llamo al <head></head> con un navbar del header.php*/?>
 
 <?php 
-  $quieroTareas=true;
+  $quieroTareas=false;
   if($quieroTareas){    
     include('./tareabody.php');
   }else{
