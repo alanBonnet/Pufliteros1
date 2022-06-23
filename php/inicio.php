@@ -24,7 +24,7 @@ include("../core/db.php");
 
     */
     $needLogin = true
-  /*pinto el navbar y luego el content*/
+    
 
   ?>
 
