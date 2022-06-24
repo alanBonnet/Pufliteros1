@@ -2,7 +2,7 @@
     <div class="row mx-auto">
             <div class="col-md-4">
                 <div class="card card-body">
-                    <form action="../controllers/guardarTarea.php" method="POST">
+                    <form action="../controllers/tareas/guardarTarea.php" method="POST">
                         <div class="form-group">
                             <input 
                                 type="text" 
