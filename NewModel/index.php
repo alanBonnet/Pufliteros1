@@ -14,6 +14,9 @@
                         <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
                         <li class="nav-item">
                         <a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#RegistrarseModal">Registrarse</a>
+                        <!-- fijate en el archivo que está en 
+                            Puflitero1/includes/modals/modalRegister.php
+                             para cambiar la vista del modal -->
                         </li>
                     </ul>
                 </div>
