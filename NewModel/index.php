@@ -1,16 +1,16 @@
 <?php include('../includes/header.php')?>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container px-5">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top animate__animated animate__backInRight">
+            <div class="container px-5 animate__animated animate__backInRight">
                 <a class="navbar-brand" href="#page-top">TCAD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Foro</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Preguntas Frecuentes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contáctanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
                         <li class="nav-item">
                         <a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#RegistrarseModal">Registrarse</a>
@@ -23,11 +23,12 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="masthead text-center text-white">
+        <header class="masthead text-center text-white" id="inicio">
             <div class="masthead-content">
                 <div class="container px-5">
-                    <h1 class="masthead-heading mb-0">Que ofrecemos</h1>
-                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Mostrar más</a>
+                    <h1 class="masthead-heading mb-0 animate__animated animate__bounceIn">La AppWeb ideal para hacer de tu busqueda de trabajo más simple</h1>
+                    <h1 class="text-dark animate__animated animate__bounceIn">¿Quiéres saber sobre el proyecto?</h1>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5 animate__animated animate__bounceIn" href="#scroll">Mostrar más</a>
                 </div>
             </div>
             <div class="bg-circle-1 bg-circle"></div>
@@ -83,6 +84,7 @@
                 </div>
             </div>
         </section>
+        <?php include('../includes/contacto.php')?>
         <!-- Modales -->
             <?php include('../includes/modals/modalRegister.php')?>
 

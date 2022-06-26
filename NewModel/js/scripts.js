@@ -5,3 +5,18 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+let canSeeFormContact = true;
+let contactoForm = document.getElementById('contacto');
+function mostrarContacto(){
+    canSeeFormContact = !canSeeFormContact;
+    if(canSeeFormContact == false){
+        contactoForm.className = 'container my-3 animate__animated animate__bounceIn';
+        contactoForm.hidden = canSeeFormContact;
+    }else{
+        contactoForm.className = 'container my-3 animate__animated animate__bounceOut'
+        setTimeout(()=>{
+            contactoForm.hidden = canSeeFormContact;
+        },700);
+    }
+    
+}
