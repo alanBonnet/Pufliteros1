@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="RegistrarseModal" tabindex="-1" aria-labelledby="RegistrarseModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="RegistrarseModalLabel">Registro</h5>
