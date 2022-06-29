@@ -90,16 +90,25 @@
             </div>
         </section>
 
-        <hr>
+        <hr class="border-2 border border-secondary">
         
-<h1>Preguntas Frecuentes</h1>
+        <div class="container" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+            <h1 class="text-center">Preguntas Frecuentes</h1>
 
+            <img class="mx-auto d-block img-fluid rounded-circle my-3 w-50" src="./assets/img/pagina-preguntas-frecuentes-o-FAQ.jpg" alt="">
+
+            
+
+        </div>
         
-
-
+        <!-- seccion preguntas frecuentes -->
+        
+        <!-- seccion contacto -->
         <?php include('../includes/contacto.php')?>
         <!-- Modales -->
-            <?php include('../includes/modals/modalRegister.php')?>
+        <?php include('../includes/modals/modalRegister.php')?>
 
 
 <?php include('../includes/footer.php')?>
