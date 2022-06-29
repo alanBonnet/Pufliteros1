@@ -8,7 +8,6 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Foro</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
@@ -38,10 +37,9 @@
         </header>
         <!-- Content section 1-->
         <section id="scroll">
-            <div class="container px-5" data-aos="fade-left"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="500">
+            <div class="container px-5" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/kurrrikulum.webp" alt="..." /></div>
@@ -57,7 +55,9 @@
         </section>
         <!-- Content section 2-->
         <section>
-            <div class="container px-5">
+            <div class="container px-5" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/2da img.jpg" alt="..." /></div>
@@ -73,7 +73,9 @@
         </section>
         <!-- Content section 3-->
         <section>
-            <div class="container px-5">
+            <div class="container px-5" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/03.jpg" alt="..." /></div>
@@ -87,6 +89,11 @@
                 </div>
             </div>
         </section>
+
+    
+
+
+
         <?php include('../includes/contacto.php')?>
         <!-- Modales -->
             <?php include('../includes/modals/modalRegister.php')?>
