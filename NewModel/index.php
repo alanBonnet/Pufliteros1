@@ -8,7 +8,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
                         <li class="nav-item">
@@ -90,8 +90,11 @@
             </div>
         </section>
 
-    
+        <hr>
+        
+<h1>Preguntas Frecuentes</h1>
 
+        
 
 
         <?php include('../includes/contacto.php')?>
