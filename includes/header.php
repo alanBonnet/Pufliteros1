@@ -21,21 +21,4 @@
         <link href="../NewModel/css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="../NewModel/css/stylemain.css">
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#page-top">TCAD</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Foro</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Preguntas Frecuentes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contactanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Registrarse</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    

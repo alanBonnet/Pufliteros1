@@ -13,13 +13,13 @@
                 <div class="row">
                     <div class="col-12 col-md-9 mx-auto my-1">
                        <div class="form-floating">
-                         <input type="text" name="nombre" id="" class="form-control mx-auto" placeholder="Usuario">
+                         <input type="text" name="nombre" id="" class="form-control mx-auto" min="8" placeholder="Usuario" required>
                          <label for="nombre"><i class="bi bi-person bg-dark p-1 rounded text-white"></i> Nombre de Usuario</label>
                        </div>
                     </div>
                     <div class="col-12 col-md-9 mx-auto my-1">
                         <div class="form-floating">
-                            <input type="text" name="email" id="" class="form-control mx-auto" placeholder="email@example.com">
+                            <input type="text" name="email" id="" class="form-control mx-auto" min="13" placeholder="email@example.com" required>
                             <label for="email"><i class="bi bi-at bg-dark p-1 rounded text-white"></i> Email</label>
                         </div>
                     </div>
