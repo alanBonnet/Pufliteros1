@@ -38,7 +38,10 @@
         </header>
         <!-- Content section 1-->
         <section id="scroll">
-            <div class="container px-5">
+            <div class="container px-5" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/kurrrikulum.webp" alt="..." /></div>
