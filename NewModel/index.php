@@ -10,13 +10,26 @@
                         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#RegistrarseModal">Registrarse</a>
-                        <!-- fijate en el archivo que está en 
-                            Puflitero1/includes/modals/modalRegister.php
-                             para cambiar la vista del modal -->
-                        </li>
+                        <?php 
+                            $_SESSION['usuario']='alanBonnet';
+                            if(isset($_SESSION['usuario'])){
+                                ?>  
+                                    
+                                    <li class="nav-item"><a href="#!" class="nav-link"><?php echo $_SESSION['usuario'] ?></a></li>
+                                    <li class="nav-item"><a href="#!" class="nav-link">Cerrar Sesión</a></li>
+                                <?php
+                            }else{
+                                ?>
+                                <li class="nav-item"><a class="nav-link" href="#!">Iniciar Sesión</a></li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#RegistrarseModal">Registrarse</a>
+                                <!-- fijate en el archivo que está en 
+                                    Puflitero1/includes/modals/modalRegister.php
+                                    para cambiar la vista del modal -->
+                                </li>
+                                <?php
+                            }
+                        ?>
                     </ul>
                 </div>
             </div>
