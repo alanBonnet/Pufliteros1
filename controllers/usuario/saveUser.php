@@ -26,36 +26,37 @@
                             $count = $nuevoUsuario->rowCount();
                             if ($count == 1){
                                 $titulo = "Bienvenido ".$nombre;
+                                $_SESSION['isLogged'] = true;
                                 $_SESSION['usuario'] = $nombre;
-                                header('Location: ../../NewModel/index.php');
+                                header('Location: ../../php/index.php');
                                 
                                 
                                 //$nuevoUsuario->commit;
                             }else{
                                $mensaje = 'No se pudo registrar el usuario, por favor intente mas tarde.';
-                               header('Location: ../../NewModel/index.php');
+                               header('Location: ../../php/index.php');
                                
                             }
                         }else{
                             $mensaje = 'El usuario y/o correo ya existe.';
-                            header('Location: ../../NewModel/index.php');
+                            header('Location: ../../php/index.php');
                         }
                     }else{
                         $mensaje = 'Email no valido.';
-                        header('Location: ../../NewModel/index.php');
+                        header('Location: ../../php/index.php');
                     }
                     
                 }else{
                     $mensaje= 'Las contraseñas no coinciden.';
-                    header('Location: ../../NewModel/index.php');
+                    header('Location: ../../php/index.php');
                 }
             }else{
                 $nombre = 'El nombre de usuario es muy corto, el mínimo es de 8 carácteres.';
-                header('Location: ../../NewModel/index.php');
+                header('Location: ../../php/index.php');
             }
         }else{
             $nombre = "La contraseña es muy corta, el mínimo es de 8 carácteres.";
-            header('Location: ../../NewModel/index.php');
+            header('Location: ../../php/index.php');
         }
         
     }
