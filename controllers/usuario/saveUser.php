@@ -8,7 +8,11 @@
         $pass = $_POST['password'];
         $passConfirm = $_POST['comfirmPassword'];
         
-        
+        $mensaje= "";
+        $alertColor= "alert-success";
+        $_SESSION['alertColor'] = $alertColor;
+        $titulo = "Error";
+        $_SESSION['titulo'] = $titulo;
         if( strlen($pass)>=8){
             if ( strlen($nombre)>=8){
                 if($pass == $passConfirm){
@@ -25,37 +29,50 @@
 
                             $count = $nuevoUsuario->rowCount();
                             if ($count == 1){
-                                $titulo = "Bienvenido ".$nombre;
+                                $mensaje = "Bienvenido ".$nombre;
                                 $_SESSION['isLogged'] = true;
                                 $_SESSION['usuario'] = $nombre;
+                                $_SESSION['mensaje'] = $mensaje;
                                 header('Location: ../../php/index.php');
                                 
                                 
                                 //$nuevoUsuario->commit;
                             }else{
                                $mensaje = 'No se pudo registrar el usuario, por favor intente mas tarde.';
+                               $_SESSION['mensaje'] = $mensaje;
+                               $alertColor ="alert-danger";
                                header('Location: ../../php/index.php');
                                
                             }
                         }else{
                             $mensaje = 'El usuario y/o correo ya existe.';
+                            $_SESSION['mensaje'] = $mensaje;
+                            $alertColor="alert-danger";
                             header('Location: ../../php/index.php');
                         }
                     }else{
                         $mensaje = 'Email no valido.';
+                        $_SESSION['mensaje'] = $mensaje;
+                        $alertColor="alert-danger";
                         header('Location: ../../php/index.php');
                     }
                     
                 }else{
                     $mensaje= 'Las contraseñas no coinciden.';
+                    $_SESSION['mensaje'] = $mensaje;
+                    $alertColor="alert-danger";
                     header('Location: ../../php/index.php');
                 }
             }else{
                 $nombre = 'El nombre de usuario es muy corto, el mínimo es de 8 carácteres.';
+                $_SESSION['mensaje'] = $mensaje;
+                $alertColor="alert-danger";
                 header('Location: ../../php/index.php');
             }
         }else{
             $nombre = "La contraseña es muy corta, el mínimo es de 8 carácteres.";
+            $_SESSION['mensaje'] = $mensaje;
+            $alertColor="alert-danger";
             header('Location: ../../php/index.php');
         }
         

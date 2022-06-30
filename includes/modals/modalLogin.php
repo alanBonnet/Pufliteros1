@@ -22,6 +22,7 @@
                             <input type="password" name="password" id="" min="8" class="form-control mx-auto" placeholder="pass" required>
                             <label for="password"><i class="bi bi-lock bg-dark p-1 rounded text-white"></i> Contraseña</label>
                         </div>
+                        
                     </div>
                     <div class="col-12 col-md-4 mx-auto my-1">
                         <!-- <button type="submit" class="btn btn-primary p-2 mx-auto" id="registrarse" name="registro">Registrarse</button> -->
