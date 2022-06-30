@@ -17,7 +17,7 @@
                                 ?>  
                                     
                                     <li class="nav-item"><a href="#!" class="nav-link"><?php echo $_SESSION['usuario'] ?></a></li>
-                                    <li class="nav-item"><a href="#!" class="nav-link" > Cerrar Sesión</a></li>
+                                    <li class="nav-item"><a href="#!" class="nav-link" >  Cerrar Sesión</a></li>
                                 <?php
                             }else{
                                 ?>
