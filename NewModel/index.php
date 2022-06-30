@@ -11,13 +11,12 @@
                         <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                         <?php 
-                           // $_SESSION['usuario']='angel1234';
                            session_start();
                             if(isset($_SESSION['usuario'])){
                                 ?>  
                                     
-                                    <li class="nav-item"><a href="#!" class="nav-link"><?php echo $_SESSION['usuario'] ?></a></li>
-                                    <li class="nav-item"><a href="#!" class="nav-link" >  Cerrar Sesión</a></li>
+                                    <li class="nav-item"><a href="#!" class="nav-link text-success rounded-pill bg-opacity-25"> <i class="bi bi-people "></i> <?php echo $_SESSION['usuario'] ?></a></li>
+                                    <li class="nav-item"><a href="../controllers/usuario/logout.php" class="nav-link" >  Cerrar Sesión</a></li>
                                 <?php
                             }else{
                                 ?>

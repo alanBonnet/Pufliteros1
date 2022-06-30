@@ -26,6 +26,7 @@
                             $count = $nuevoUsuario->rowCount();
                             if ($count == 1){
                                 $titulo = "Bienvenido ".$nombre;
+                                $_SESSION['isLogged'] = true;
                                 $_SESSION['usuario'] = $nombre;
                                 header('Location: ../../NewModel/index.php');
                                 
