@@ -10,3 +10,6 @@
 .masthead-content{
     min-height: 100vh;
 }
+.rounded-25{
+    border-radius: 25px;
+}
