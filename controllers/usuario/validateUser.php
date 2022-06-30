@@ -17,14 +17,15 @@
             $mensaje= "hola $usuario";
             $_SESSION['mensaje'] = $mensaje;
             
-            header('Location: ../../NewModel/index.php');
+            header('Location: ../../php/index.php');
         }else{
+            $_SESSION['errorLog']= true;
             $mensaje = "Usuario no encontrado, puede que se esté equivocando en algún campo";
             $_SESSION['mensaje'] = $mensaje;
             $icon = '<i class="bi bi-exclamation-triangle-fill text-danger"></i>';
             $_SESSION['icono'] = $icon;
             $_SESSION['titulo'] = "Error";
-            header('Location: ../../includes/confirmar.php');
+            header('Location: ../../php/index.php');
         }
     }
 

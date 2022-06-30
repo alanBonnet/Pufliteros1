@@ -131,6 +131,6 @@
     <!-- Modales -->
     <?php include('../includes/modals/modalRegister.php') ?>
     <?php include('../includes/modals/modalLogin.php') ?>
-
+    <?php include('../includes/modals/modalmsj.php') ?>
 
     <?php include('../includes/footer.php') ?>
