@@ -1,5 +1,7 @@
-<?php include('../../core/db.php');
-    
+<div style="margin-left:2rem;margin-right:2rem;">
+<?php
+     
+      include('../../core/db.php');
     if(isset($_POST['registro'])){
         $nombre = $_POST['nombre'];
         $email = $_POST['email'];
@@ -10,20 +12,25 @@
         if( strlen($pass)>=8 && strlen($nombre)>=8){
             if($pass == $passConfirm){
                 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                    header(Location: '../../core/db.php');
-                    $sql = "INSERT INTO usuarios VALUES(':nombre',':email',':pass')";
-                    $nuevoUsuario = $conexion->prepare("$sql");
-                    $nuevoUsuario->bindParam(':nombre',$nombre);
-                    $nuevoUsuario->bindParam(':email',$email);
-                    $nuevoUsuario->bindParam(':password',$password);
-                    $nuevoUsuario->execute();
-                    $count = $nuevoUsuario->rowCount();
-                    if ($count == 1){
-                        $titulo = "Bienvenido".$nombre;
-                        $nuevoUsuario-> commit();
+                    $usuario = $conn->query("select * from usuarios where nombre = '$nombre'")->fetch(PDO::FETCH_ASSOC);
+                    if ($usuario == false) {      
+                        $sql = "INSERT INTO usuarios(nombre , email , contrasenia) VALUES(:nombre , :email, :pass)";
+                        $nuevoUsuario = $conn->prepare($sql);
+                        
+                        $nuevoUsuario->execute([":nombre" => $nombre, ":email"=> $email , ":pass" => $pass]);
+                        $count = $nuevoUsuario->rowCount();
+                        if ($count == 1){
+                            $titulo = "Bienvenido ".$nombre;
+                            echo $titulo;
+                            //$nuevoUsuario->commit;
+                        }else{
+                           // $nuevoUsuario-> rollBack();
+                        }
                     }else{
-                        $nuevoUsuario-> rollBack();
+                        echo "hola";
                     }
+
+                    
                 }else{
                     echo " email no válido ";
                 }
@@ -37,3 +44,5 @@
         
     }
 
+?>
+</div>
