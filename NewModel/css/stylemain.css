@@ -12,4 +12,9 @@
 }
 .rounded-25{
     border-radius: 25px;
+}.pagcurri{
+    background-color: aqua;
+}
+.pagcurriculum{
+    background-color: skyblue;
 }

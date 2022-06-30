@@ -117,7 +117,7 @@
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">El curriculum cumple con tres funciones: presentarte a tu futuro empleador, tus aspectos mas importantes de tu recorrido academico y laboral, como ultimo recordar a tu futuro empleador los datos que mejor hablan de ti.</div>
+                    <div class="accordion-body">El curriculum cumple con tres funciones: presentarte a tu futuro empleador, tus aspectos mas importantes de tu recorrido academico y laboral, como ultimo recordar a tu futuro empleador los datos que mejor hablan de ti. En este caso ocuparemos el formato KIWI</div>
                 </div>
             </div>
         </div>
