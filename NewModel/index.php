@@ -11,7 +11,7 @@
                         <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                         <?php 
-                            $_SESSION['usuario']='alanBonnet';
+                            //$_SESSION['usuario']='alanBonnet';
                             if(isset($_SESSION['usuario'])){
                                 ?>  
                                     

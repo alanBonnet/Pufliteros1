@@ -14,7 +14,7 @@
                 if($pass == $passConfirm){
                     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-                        $usuario = $conn->query("select * from usuarios where nombre = '$nombre'")->fetch(PDO::FETCH_ASSOC);
+                        $usuario = $conn->query("select * from usuarios where nombre = '$nombre' and email = '$email'")->fetch(PDO::FETCH_ASSOC);
 
                         if ($usuario == false) {      
                             $sql = "INSERT INTO usuarios(nombre, email, password) VALUES(:nombre , :email, :pass)";
@@ -37,7 +37,7 @@
                                
                             }
                         }else{
-                            $mensaje = 'El usuario ya existe.';
+                            $mensaje = 'El usuario y/o correo ya existe.';
                             header('Location: ../../NewModel/index.php');
                         }
                     }else{
