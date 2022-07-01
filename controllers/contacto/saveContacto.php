@@ -11,7 +11,7 @@
 
                             $count = $nuevoContacto->rowCount();
                             if ($count == 1){
-                                $mensaje ="se envió el contacto";
+                                //$mensaje ="se envió el contacto";
                                 header('Location: ../../php/index.php');
                                 
                                 // contacto => id_contacto INT(11) PK A_I, 
@@ -20,7 +20,7 @@
                                             // createdAt DATESTAMP;
                                 
                             }else{
-                               $mensaje = 'No se pudo registrar el usuario, por favor intente mas tarde.';
+                               //$mensaje = 'No se pudo registrar el usuario, por favor intente mas tarde.';
                                header('Location: ../../php/index.php');
                            
                             }

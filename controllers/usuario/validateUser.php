@@ -8,6 +8,7 @@
         $sql = "SELECT * FROM usuarios WHERE nombre = '$usuario' AND password = '$pass' ";
 
         $existUser = $conn -> query($sql);
+        
         $mensaje = "";
         $count = $existUser->rowCount();
         if($count === 1){
