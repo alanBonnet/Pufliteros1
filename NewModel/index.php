@@ -1,4 +1,4 @@
-<?php include('../includes/header.php') ?>
+<?php include('../includes/header.php');session_start() ?>
 
 <body id="page-top">
     <?php include('../includes/navbar.php')?>

@@ -1,7 +1,7 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top animate__animated animate__backInRight">
         <div class="container px-5 animate__animated animate__backInRight">
-            <a class="navbar-brand" href="#page-top">TCAD</a>
+            <a class="navbar-brand" href="/pufliteros1/php/index.php">TCAD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
@@ -9,7 +9,7 @@
                     <li class="nav-item"><a class="nav-link" href="#preguntas">Preguntas Frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto" onclick="mostrarContacto()">Contáctanos</a></li>
                     <?php
-                    session_start();
+                    
                     if (isset($_SESSION['usuario'])) {
                     ?>
 

@@ -7,23 +7,31 @@
         $row;
         $sql = "SELECT * FROM usuarios WHERE nombre = '$usuario' AND password = '$pass' ";
         foreach ($conn->query($sql) as $row) {
-            print $row['idUsuario'] . "\t";
-            print $row['nombre'] . "\t";
-            print $row['email'] . "\n";
-            print $row['password'] . "\n";
-            print $row['fechaCreacion'];
+            
         }
         $existUser = $conn -> query($sql);
-        
+        $idUser = $row['idUsuario'];
         $mensaje = "";
         $count = $existUser->rowCount();
         if($count === 1){
-            $_SESSION['idUser']=$row['idUsuario'];
+            $_SESSION['idUser']=$idUser;
             $_SESSION['isLogged'] = true;
             $_SESSION['usuario'] = $usuario;
             $mensaje= "hola $usuario";
             $_SESSION['mensaje'] = $mensaje;
-            
+            $rowCV;
+            $sqlCV = "SELECT * FROM curriculums where id_usuario = $idUser";
+            $existeCV = $conn->query($sqlCV);
+            foreach ($existeCV as $rowCV) {
+                
+            }
+            $countCV = $existeCV->rowCount();
+            if($countCV === 1){
+                $_SESSION['vCV'] = true;
+            }else{
+                $_SESSION['vCV'] = false;
+            }
+            $_SESSION['curriculum'] = $rowCV;
             header('Location: ../../php/index.php');
         }else{
             $_SESSION['errorLog']= true;
