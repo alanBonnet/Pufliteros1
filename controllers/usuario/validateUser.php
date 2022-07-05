@@ -14,6 +14,7 @@
             print $row['fechaCreacion'];
         }
         $existUser = $conn -> query($sql);
+        
         $mensaje = "";
         $count = $existUser->rowCount();
         if($count === 1){
