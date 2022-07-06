@@ -7,9 +7,9 @@
     }else{
         ?>
         
-            <body class="pagcurriculum pt-4">
+            <body class="pagcurriculum pt-4 pb-5">
                 <?php include('./navbar.php')?>
-                <div class="container  mt-5">
+                <div class="container  mt-5 mb-5 pb-5">
                     <div class="row  border border-dark border-2 rounded p-3 mt-5 mb-5">
                         <div class="col-12 col-md-6 col-lg-4 border-start border-end  border-dark border-1 mx-auto">
                             <form action="../controllers/curriculum/curriSave.php" method="post">

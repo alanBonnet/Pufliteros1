@@ -1,6 +1,6 @@
 <?php include('./header.php');session_start()?>
 <?php include('./navbar.php')?>
-<div class="container mt-5 pt-5"></div>
+<div class="container mt-5 pt-5">
     <div class="row">
         <div class="col-12"><?php echo $_SESSION['curriculum']['nombre_y_apellido'] ?></div>
         <div class="col-12"><?php echo $_SESSION['curriculum']['trabajo_interes'] ?></div>

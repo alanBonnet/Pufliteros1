@@ -1,5 +1,5 @@
-<div class="container my-3 animate__animated animate__bounceIn" id="contacto" hidden>
-    <form class="bg-dark text-white p-5 rounded-lg border-3 border border-warning" action="../controllers/contacto/saveContacto.php" method="post">
+<div class="container mt-3 mb-5 pb-5  animate__animated animate__bounceIn" id="contacto" hidden>
+    <form class="bg-dark text-white p-5 mb-5 rounded-lg border-3 border border-warning" action="../controllers/contacto/saveContacto.php" method="post">
         <label class="form-label fs-3" for="">Nombre</label>
         <input class="form-control border-3 border-secondary" type="text" name="nombre_contacto" >
         <label class="form-label fs-3" for="">Dinos qué piensas</label>

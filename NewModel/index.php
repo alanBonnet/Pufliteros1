@@ -51,12 +51,12 @@
 
     <hr class="border-2 border border-secondary">
 
-    <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="container mt-3 mb-5 pb-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <h1 class="text-center" id="preguntas">Preguntas Frecuentes</h1>
 
         <img class="mx-auto d-block img-fluid rounded-circle my-3 w-50" src="./assets/img/pagina-preguntas-frecuentes-o-FAQ.jpg" alt="">
 
-        <div class="accordion accordion-flush my-3 border border-3 border-primary" id="accordionFlushExample">
+        <div class="accordion accordion-flush mt-3 mb-5 border border-3 border-primary" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -88,13 +88,13 @@
                 </div>
             </div>
         </div>
-
+            <!-- seccion contacto -->
+            <?php include('../includes/contacto.php') ?>
     </div>
 
     <!-- seccion preguntas frecuentes -->
 
-    <!-- seccion contacto -->
-    <?php include('../includes/contacto.php') ?>
+    
     <!-- Modales -->
     <?php include('../includes/modals/modalRegister.php') ?>
     <?php include('../includes/modals/modalLogin.php') ?>
