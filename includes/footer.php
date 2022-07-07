@@ -1,5 +1,5 @@
 <!-- Footer-->
-<footer class="py-5 bg-black fixed-bottom w-100">
+<footer class="py-5 bg-black  w-100">
             <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; TCAD </p></div>
 </footer>
         <!-- Bootstrap core JS-->
