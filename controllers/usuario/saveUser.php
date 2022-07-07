@@ -34,6 +34,8 @@
                                 // $_SESSION['isLogged'] = true;
                                 $_SESSION['usuario'] = $nombre;
                                 // $_SESSION['mensaje'] = $mensaje;
+                                $_SESSION['vCV'] = false;
+                                $_SESSION['curriculum'] = false;
                                 header('Location: ../../php/index.php');
                                 
                                 
