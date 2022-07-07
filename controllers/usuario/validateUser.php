@@ -11,7 +11,6 @@
         }
         $existUser = $conn -> query($sql);
         $idUser = $row['idUsuario'];
-        $mensaje = "";
         $count = $existUser->rowCount();
         if($count === 1){
             $_SESSION['idUser']=$idUser;

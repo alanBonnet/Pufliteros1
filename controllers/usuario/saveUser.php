@@ -34,6 +34,14 @@
                                 // $_SESSION['isLogged'] = true;
                                 $_SESSION['usuario'] = $nombre;
                                 // $_SESSION['mensaje'] = $mensaje;
+                                $row;
+                                $sql = "SELECT * FROM usuarios WHERE nombre = '$nombre' AND password = '$pass' ";
+                                foreach ($conn->query($sql) as $row) {
+                                    
+                                }
+                                $existUser = $conn -> query($sql);
+                                $idUser = $row['idUsuario'];
+                                $_SESSION['idUser']=$idUser;
                                 $_SESSION['vCV'] = false;
                                 $_SESSION['curriculum'] = false;
                                 header('Location: ../../php/index.php');
